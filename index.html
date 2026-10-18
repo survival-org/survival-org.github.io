@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLSA — Machine Learning Survival Analysis</title>
+  <meta name="description" content="Machine Learning Survival Analysis research group at LMU Munich. Deep learning, scoring rules, reduction techniques, and more.">
+  <meta property="og:title" content="MLSA — Machine Learning Survival Analysis">
+  <meta property="og:description" content="Research group at LMU Munich advancing survival analysis with modern machine learning.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================ Nav -->
+<nav class="nav">
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <img src="assets/logo-mark.svg" alt="MLSA" width="32" height="32">
+      <span class="nav-logo-text">
+        <span class="nav-logo-ml">Machine Learning</span>
+        <span class="nav-logo-sa">Survival Analysis</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">Research</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#software">Software</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================================ Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1><span style="color: var(--dusk-dark)">Machine Learning</span><br>Survival Analysis</h1>
+      <p class="tagline">We develop statistical and machine learning methods for time-to-event data &mdash; from deep learning architectures to proper evaluation frameworks.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Our Research</a>
+        <a href="https://survival-org.github.io/DL4Survival/" class="btn btn-outline" target="_blank">DL4Survival Review</a>
+        <a href="https://github.com/survival-org" class="btn btn-outline" target="_blank">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/logo-mark.svg" alt="MLSA Logo">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ About -->
+<section id="about">
+  <div class="container">
+    <span class="section-label">Research Focus</span>
+    <h2>Advancing Survival Analysis</h2>
+    <p class="section-desc">We investigate modern machine learning methods for survival and event-history analysis &mdash; bridging statistical rigor with scalable computation.</p>
+
+    <div class="card-grid">
+      <div class="card fade-up">
+        <h3>Deep Learning for Survival</h3>
+        <p>Neural network architectures for censored time-to-event data, including multi-modal and multi-state models.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Scoring Rules &amp; Evaluation</h3>
+        <p>Proper scoring rules for survival predictions &mdash; understanding what we measure when we evaluate survival models.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Reduction Techniques</h3>
+        <p>Transforming survival problems into standard regression or classification tasks to leverage existing ML toolkits.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Heterogeneous Treatment Effects</h3>
+        <p>Estimating individualized treatment effects in time-to-event settings using causal machine learning.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Multi-State Models</h3>
+        <p>Flexible frameworks for modeling complex disease trajectories with multiple intermediate and absorbing states.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Generative Approaches</h3>
+        <p>Generative models for survival data &mdash; new paradigms for simulation, augmentation, and prediction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Team -->
+<section id="team">
+  <div class="container">
+    <span class="section-label">Team</span>
+    <h2>Our Group</h2>
+    <p class="section-desc">Researchers from multiple universities working together on survival analysis and machine learning.</p>
+
+    <div class="team-grid">
+      <div class="team-card pi fade-up">
+        <img class="team-avatar" src="https://github.com/adibender.png?size=160" alt="Andreas Bender">
+        <h3>Dr. Andreas Bender</h3>
+        <div class="role">Principal Investigator</div>
+        <div class="links">
+          <a href="https://github.com/adibender" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card fade-up">
+        <img class="team-avatar" src="https://github.com/bblodfon.png?size=160" alt="John Zobolas">
+        <h3>Dr. John Zobolas</h3>
+        <div class="role">Postdoc</div>
+        <div class="links">
+          <a href="https://github.com/bblodfon" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card fade-up">
+        <img class="team-avatar" src="https://github.com/slds-lmu.png?size=160" alt="Lukas Burk">
+        <h3>Lukas Burk</h3>
+        <div class="role">PhD Student</div>
+        <div class="links">
+          <a href="https://github.com/jemus42" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card fade-up">
+        <img class="team-avatar" src="https://github.com/johpil.png?size=160" alt="Johannes Piller">
+        <h3>Johannes Piller</h3>
+        <div class="role">PhD Student</div>
+        <div class="links">
+          <a href="https://github.com/johpil" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card fade-up">
+        <img class="team-avatar" src="https://github.com/simonwiegrebe.png?size=160" alt="Simon Wiegrebe">
+        <h3>Simon Wiegrebe</h3>
+        <div class="role">PhD Student</div>
+        <div class="links">
+          <a href="https://github.com/simonwiegrebe" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card fade-up">
+        <h3>Philipp Kopper</h3>
+        <div class="role">PhD Student</div>
+      </div>
+
+      <div class="team-card fade-up">
+        <h3>Theresa St&uuml;ber</h3>
+        <div class="role">PhD Student</div>
+      </div>
+
+      <div class="team-card fade-up">
+        <h3>Sophie Langbein</h3>
+        <div class="role">PhD Student</div>
+      </div>
+
+      <div class="team-card fade-up">
+        <img class="team-avatar" src="https://github.com/leaorsini.png?size=160" alt="Lea Orsini">
+        <h3>Lea Orsini</h3>
+        <div class="role">PhD Student</div>
+        <div class="links">
+          <a href="https://github.com/leaorsini" target="_blank" title="GitHub">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Projects -->
+<section id="projects">
+  <div class="container">
+    <span class="section-label">Projects</span>
+    <h2>Key Research Projects</h2>
+    <p class="section-desc">Selected projects from our group, with code and data openly available.</p>
+
+    <div class="project-grid">
+      <a href="https://survival-org.github.io/DL4Survival/" target="_blank" class="project-card fade-up">
+        <h3>Deep Learning for Survival Analysis</h3>
+        <div class="meta"><span class="badge">Review</span> <span>28 stars</span></div>
+        <p>A comprehensive review of deep learning methods for survival analysis &mdash; interactive companion website with model taxonomy and benchmark results.</p>
+      </a>
+
+      <a href="https://github.com/survival-org/scoring-rules-2024" target="_blank" class="project-card fade-up">
+        <h3>Scoring Rules for Survival Analysis</h3>
+        <div class="meta"><span class="badge">Methodology</span> <span>R</span></div>
+        <p>Examining properness of scoring rules in survival analysis. When are popular evaluation metrics actually proper, and what are the implications?</p>
+      </a>
+
+      <a href="https://github.com/survival-org/reduction-techniques" target="_blank" class="project-card fade-up">
+        <h3>Reduction Techniques</h3>
+        <div class="meta"><span class="badge">Methodology</span> <span>R</span></div>
+        <p>Transforming survival analysis into standard regression or classification tasks, accompanied by extensive simulation and empirical benchmarks.</p>
+      </a>
+
+      <div class="project-card fade-up is-unlinked">
+        <h3>Survival Datasets</h3>
+        <div class="meta"><span class="badge">Data</span></div>
+        <p>A curated collection of publicly available survival datasets, aggregated and standardized for ease of use in benchmarking and teaching.</p>
+      </div>
+
+      <a href="https://github.com/survival-org/user2024-survival-mlr3" target="_blank" class="project-card fade-up">
+        <h3>useR! 2024 &mdash; ML for Survival with mlr3</h3>
+        <div class="meta"><span class="badge">Tutorial</span> <span>TeX</span></div>
+        <p>Materials for the useR! 2024 tutorial on machine learning for survival analysis using the mlr3 ecosystem.</p>
+      </a>
+
+      <a href="https://github.com/survival-org/msm4diseaseHistories" target="_blank" class="project-card fade-up">
+        <h3>Multi-State Models for Disease Histories</h3>
+        <div class="meta"><span class="badge">Application</span> <span>R</span></div>
+        <p>Applying multi-state models to longitudinal disease history data for understanding complex patient trajectories.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Software -->
+<section id="software">
+  <div class="container">
+    <span class="section-label">Software</span>
+    <h2>Open-Source Tools</h2>
+    <p class="section-desc">R packages maintained by our group for applied survival analysis and machine learning.</p>
+
+    <div class="software-grid">
+      <div class="software-card fade-up">
+        <h3>pammtools</h3>
+        <div class="lang">R &middot; CRAN</div>
+        <p>Piece-wise exponential Additive Mixed Modeling tools &mdash; flexible hazard modeling via the mgcv framework.</p>
+        <div class="badges">
+          <a href="https://cran.r-project.org/package=pammtools" target="_blank"><img src="https://www.r-pkg.org/badges/version/pammtools" alt="CRAN"></a>
+          <a href="https://github.com/adibender/pammtools" target="_blank"><img src="https://img.shields.io/github/stars/adibender/pammtools?style=flat&color=CED8B2" alt="Stars"></a>
+        </div>
+      </div>
+
+      <div class="software-card fade-up">
+        <h3>mlr3proba</h3>
+        <div class="lang">R &middot; CRAN</div>
+        <p>Probabilistic supervised learning for mlr3 &mdash; survival analysis, density estimation, and probabilistic regression.</p>
+        <div class="badges">
+          <a href="https://cran.r-project.org/package=mlr3proba" target="_blank"><img src="https://www.r-pkg.org/badges/version/mlr3proba" alt="CRAN"></a>
+          <a href="https://github.com/mlr-org/mlr3proba" target="_blank"><img src="https://img.shields.io/github/stars/mlr-org/mlr3proba?style=flat&color=CED8B2" alt="Stars"></a>
+        </div>
+      </div>
+
+      <div class="software-card fade-up">
+        <h3>DeepPAMM</h3>
+        <div class="lang">Python</div>
+        <p>Deep piecewise exponential additive mixed models &mdash; combining the flexibility of PAMMs with deep learning.</p>
+        <div class="badges">
+          <a href="https://github.com/pkopper/deeppamm" target="_blank"><img src="https://img.shields.io/github/stars/pkopper/deeppamm?style=flat&color=CED8B2" alt="Stars"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Publications -->
+<section id="publications">
+  <div class="container">
+    <span class="section-label">Publications</span>
+    <h2>Selected Publications</h2>
+    <p class="section-desc">A selection of recent works. See <a href="https://scholar.google.com/citations?user=3Y5fxGgAAAAJ" target="_blank" style="color:var(--clay)">Google Scholar</a> for a full list.</p>
+
+    <div class="pub-list">
+      <div class="pub-item fade-up">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3>Deep Learning for Survival Analysis: A Review</h3>
+          <div class="authors">Wiegrebe, S., Kopper, P., Bischl, B., Bender, A.</div>
+          <div class="venue">Artificial Intelligence Review</div>
+        </div>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3>Scoring Rules for Survival Analysis</h3>
+          <div class="authors">Sonabend, R., Zobolas, J., Bischl, B., Bender, A.</div>
+          <div class="venue">Preprint</div>
+        </div>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3>Reduction Techniques for Survival Analysis</h3>
+          <div class="authors">Piller, J., Bender, A., Bischl, B.</div>
+          <div class="venue">Preprint</div>
+        </div>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-year">2021</div>
+        <div class="pub-body">
+          <h3>A General Machine Learning Framework for Survival Analysis</h3>
+          <div class="authors">Sonabend, R., Kiraly, F., Bender, A., Bischl, B., Lang, M.</div>
+          <div class="venue">ECML PKDD</div>
+        </div>
+      </div>
+
+      <div class="pub-item fade-up">
+        <div class="pub-year">2021</div>
+        <div class="pub-body">
+          <h3>pammtools: Piece-wise Exponential Additive Mixed Modeling Tools for Survival Analysis</h3>
+          <div class="authors">Bender, A., Scheipl, F.</div>
+          <div class="venue">Journal of Statistical Software</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Contact -->
+<section id="contact">
+  <div class="container">
+    <span class="section-label">Contact</span>
+    <h2>Get in Touch</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Address</h3>
+        <p>Department of Statistics<br>LMU Munich<br>Ludwigstra&szlig;e 33<br>80539 Munich, Germany</p>
+      </div>
+      <div class="contact-info">
+        <h3>Online</h3>
+        <p><a href="https://www.slds.stat.uni-muenchen.de/research/survival.html" target="_blank">SLDS Group Page</a></p>
+        <p><a href="https://github.com/survival-org" target="_blank">GitHub Organization</a></p>
+        <p><a href="https://scholar.google.com/citations?user=3Y5fxGgAAAAJ" target="_blank">Google Scholar</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Footer -->
+<footer class="footer">
+  <div class="container">
+    <span>&copy; 2025 MLSA &middot; LMU Munich</span>
+    <div class="footer-links">
+      <a href="https://github.com/survival-org" target="_blank">GitHub</a>
+      <a href="https://www.slds.stat.uni-muenchen.de/" target="_blank">SLDS</a>
+      <a href="https://www.lmu.de" target="_blank">LMU</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

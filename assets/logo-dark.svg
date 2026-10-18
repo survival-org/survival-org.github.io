@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90">
+  <circle cx="45" cy="45" r="42" fill="none" stroke="#CCD7D9" stroke-width="2.5"/>
+  <text x="45" y="38" text-anchor="middle" font-family="'Futura','Avenir','Montserrat','Segoe UI',sans-serif" font-size="28" font-weight="700" letter-spacing="3" fill="#CCD7D9">ML</text>
+  <line x1="15" y1="45" x2="75" y2="45" stroke="#CCD7D9" stroke-width="1"/>
+  <text x="45" y="72" text-anchor="middle" font-family="'Futura','Avenir','Montserrat','Segoe UI',sans-serif" font-size="28" font-weight="700" letter-spacing="3" fill="#fff">SA</text>
+  <text x="105" y="32" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#CCD7D9" textLength="220" lengthAdjust="spacing">MACHINE LEARNING</text>
+  <line x1="105" y1="47" x2="325" y2="47" stroke="rgba(204,215,217,0.3)" stroke-width="0.8"/>
+  <text x="105" y="70" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="600" fill="#fff" textLength="220" lengthAdjust="spacing">SURVIVAL ANALYSIS</text>
+</svg>

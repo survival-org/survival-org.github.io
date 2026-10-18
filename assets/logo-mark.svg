@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+  <circle cx="45" cy="45" r="42" fill="none" stroke="#9BADB2" stroke-width="2.5"/>
+  <text x="45" y="38" text-anchor="middle" font-family="'Futura','Avenir','Montserrat','Segoe UI',sans-serif" font-size="28" font-weight="700" letter-spacing="3" fill="#9BADB2">ML</text>
+  <line x1="15" y1="45" x2="75" y2="45" stroke="#9BADB2" stroke-width="1"/>
+  <text x="45" y="72" text-anchor="middle" font-family="'Futura','Avenir','Montserrat','Segoe UI',sans-serif" font-size="28" font-weight="700" letter-spacing="3" fill="#4E4E4E">SA</text>
+</svg>
