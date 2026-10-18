@@ -28,3 +28,8 @@ if (burger) {
     a.addEventListener('click', () => links.classList.remove('open'));
   });
 }
+
+// Footer-Jahr aus der Systemzeit des Besuchers; 2026 im HTML ist der Fallback,
+// falls JS nicht laeuft.
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
