@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2026-10-19">
 </head>
 <body>
 
@@ -28,6 +28,7 @@
       </span>
     </a>
     <ul class="nav-links">
+      <li><a href="#news">News</a></li>
       <li><a href="#about">Research</a></li>
       <!-- <li><a href="#team">Team</a></li> -->
       <li><a href="#projects">Projects</a></li>
@@ -58,6 +59,138 @@
     </div>
     <div class="hero-visual">
       <img src="assets/logo-mark.svg" alt="MLSA Logo">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ News
+     Ein Eintrag ist ein <article class="news-item"> in der .news-list.
+     data-date  : ISO-Datum, danach wird absteigend sortiert.
+     data-pinned: "true" haelt den Eintrag oben, unabhaengig vom Datum
+                  (js/main.js sortiert beim Laden um; ohne JS gilt die
+                  Reihenfolge hier im HTML).
+     Bilder, zwei Varianten, beide optional:
+       .news-thumb  — schmale Spalte links neben dem Text, vor .news-body.
+                      Fuer Hochformat wie ein Buchcover (110 px, Telefon 80 px).
+       .news-figure — volle Kartenbreite, innerhalb .news-body unter dem Text.
+                      Fuer Querformat wie Schemata und Diagramme, die in einer
+                      schmalen Spalte unleserlich waeren.
+-->
+<section id="news">
+  <div class="container">
+    <span class="section-label">News</span>
+    <h2>Latest from the Group</h2>
+    <p class="section-desc">Announcements, releases and events from the group.</p>
+
+    <div class="news-list">
+
+      <article class="news-item fade-up" data-date="2026-10-19" data-pinned="true">
+        <a class="news-thumb" href="https://www.routledge.com/Machine-Learning-for-Survival-Analysis/Bender-Sonabend/p/book/9781032537498" target="_blank">
+          <img src="assets/mlsa-book-cover.jpg" alt="Machine Learning for Survival Analysis &mdash; book cover" width="110" height="157">
+        </a>
+        <div class="news-body">
+          <div class="news-meta">
+            <time datetime="2026-10-19">19 October 2026</time>
+            <span class="news-pin" aria-label="Pinned item">Pinned</span>
+          </div>
+          <h3>Machine Learning for Survival Analysis is available for pre-order</h3>
+          <p>Our textbook with Chapman &amp; Hall/CRC is now listed for pre-order. Andreas Bender and Raphael Sonabend introduce the basic principles of survival and event-history analysis before turning to specific learners, from established estimators to random forests, boosting and neural networks. A particular focus is on the evaluation of survival predictions and on reduction techniques, that is, methods that transform a survival task into a standard regression or classification task &mdash; the full text stays free to read online.</p>
+          <div class="news-links">
+            <a href="https://www.routledge.com/Machine-Learning-for-Survival-Analysis/Bender-Sonabend/p/book/9781032537498" target="_blank" class="btn btn-primary">Pre-order</a>
+            <a href="https://www.mlsabook.com" target="_blank" class="btn btn-outline">Read online</a>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="news-item fade-up" data-date="2026-05-10">
+        <div class="news-body">
+          <div class="news-meta">
+            <time datetime="2026-05-10">10 May 2026</time>
+            <span class="news-tag">Paper</span>
+          </div>
+          <h3>Reduction Techniques for Survival Analysis</h3>
+          <p>Survival tasks can be turned into ordinary regression or classification problems without ignoring what makes survival data special. The paper surveys the available reductions &mdash; piecewise exponential, discrete time, survival stacking, IPCW and pseudo-values &mdash; weighs their strengths and weaknesses, and provides implementations that plug into standard machine learning workflows, with a benchmark against established survival methods.</p>
+          <a class="news-figure" href="https://doi.org/10.1007/s10985-026-09714-0" target="_blank">
+            <img src="assets/news/reduction-pipeline.png" alt="Schematic of a reduction pipeline: a survival task is transformed into a regression or classification task, a standard learner is fitted, and its prediction is transformed back into a survival prediction" width="1200" height="445">
+          </a>
+          <div class="news-meta news-cite">Piller, Orsini, Wiegrebe, Langbein, Burk, Zobolas, Studener, Goeswein &amp; Bender &middot; <em>Lifetime Data Analysis</em> 32(2):34</div>
+          <div class="news-links">
+            <a href="https://doi.org/10.1007/s10985-026-09714-0" target="_blank" class="btn btn-outline">Paper</a>
+            <a href="https://github.com/survival-org/reduction-techniques" target="_blank" class="btn btn-outline">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-item fade-up" data-date="2026-04-16">
+        <div class="news-body">
+          <div class="news-meta">
+            <time datetime="2026-04-16">16 April 2026</time>
+            <span class="news-tag">Paper</span>
+          </div>
+          <h3>A Large-Scale Neutral Comparison Study of Survival Models</h3>
+          <p>The first large-scale neutral benchmark for single-event, right-censored, low-dimensional survival data: 21 models, from classical statistical approaches to common machine learning methods, on 34 publicly available datasets, with tuning and evaluation handled identically for all of them. The point is guidance that practitioners can act on.</p>
+          <a class="news-figure" href="https://doi.org/10.1093/bioinformatics/btag186" target="_blank">
+            <img src="assets/news/benchmark-critical-difference.png" alt="Critical-difference diagram ranking 21 survival models by Harrell&rsquo;s C" width="1200" height="684">
+          </a>
+          <div class="news-meta news-cite">Burk, Zobolas, Bischl, Bender, Wright &amp; Sonabend &middot; <em>Bioinformatics</em> 42(5):btag186</div>
+          <div class="news-links">
+            <a href="https://doi.org/10.1093/bioinformatics/btag186" target="_blank" class="btn btn-outline">Paper</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-item fade-up" data-date="2025-10-01">
+        <div class="news-body">
+          <div class="news-meta">
+            <time datetime="2025-10-01">1 October 2025</time>
+            <span class="news-tag">Paper</span>
+          </div>
+          <h3>On Training Survival Models with Scoring Rules</h3>
+          <p>How should a survival model &mdash; a neural one in particular &mdash; be trained? The paper compares training objectives, among them the likelihood, the Brier score and the CRPS, and analyses their properties for survival prediction both theoretically and empirically.</p>
+          <div class="news-meta news-cite">Kopper, R&uuml;gamer, Sonabend, Bischl &amp; Bender &middot; ECML PKDD 2025, LNCS 16019, 74&ndash;91</div>
+          <div class="news-links">
+            <a href="https://doi.org/10.1007/978-3-032-06109-6_5" target="_blank" class="btn btn-outline">Paper</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="news-item fade-up" data-date="2025-02-18">
+        <div class="news-body">
+          <div class="news-meta">
+            <time datetime="2025-02-18">18 February 2025</time>
+            <span class="news-tag">Paper</span>
+          </div>
+          <h3>High-Dimensional Variable Selection with Competing Events</h3>
+          <p>Penalized Cox regression handles each event type on its own and discards what the causes have in common. Cooperative penalized regression instead fits two cause-specific models in alternation, each one handed the other&rsquo;s coefficients as prior information, so shared effects are used rather than ignored.</p>
+          <div class="news-meta news-cite">Burk, Bender &amp; Wright &middot; <em>Biometrical Journal</em> 67(1):e70036</div>
+          <div class="news-links">
+            <a href="https://doi.org/10.1002/bimj.70036" target="_blank" class="btn btn-outline">Paper</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Vorlage fuer weitere Eintraege (die news-thumb-Zeile nur bei Bedarf):
+      <article class="news-item fade-up" data-date="JJJJ-MM-TT">
+        <a class="news-thumb" href="#" target="_blank">
+          <img src="assets/beispiel.jpg" alt="Beschreibung" width="110" height="157">
+        </a>
+        <div class="news-body">
+          <div class="news-meta">
+            <time datetime="JJJJ-MM-TT">TT Monat JJJJ</time>
+          </div>
+          <h3>Ueberschrift</h3>
+          <p>Zwei bis drei Saetze.</p>
+          <a class="news-figure" href="#" target="_blank">
+            <img src="assets/news/beispiel.png" alt="Beschreibung" width="1200" height="445">
+          </a>
+          <div class="news-links">
+            <a href="#" target="_blank" class="btn btn-outline">Mehr</a>
+          </div>
+        </div>
+      </article>
+      -->
+
     </div>
   </div>
 </section>
@@ -95,10 +228,24 @@
         <p>Generative models for survival data &mdash; new paradigms for simulation, augmentation, and prediction.</p>
       </div>
     </div>
+
+    <div class="book-feature fade-up">
+      <a class="book-cover" href="https://www.mlsabook.com" target="_blank">
+        <img src="assets/mlsa-book-cover.jpg" alt="Cover of Machine Learning for Survival Analysis by Andreas Bender and Raphael Sonabend" width="160" height="229">
+      </a>
+      <div class="book-body">
+        <span class="section-label">Book</span>
+        <h3>Machine Learning for Survival Analysis</h3>
+        <p>Andreas Bender and Raphael Sonabend bridge the theory of survival analysis with the methods, workflows and evaluation tools of modern machine learning &mdash; from nonparametric estimators and the Cox model to random forests, boosting and neural networks. Chapman &amp; Hall/CRC, 1st edition.</p>
+        <div class="book-links">
+          <a href="https://www.routledge.com/Machine-Learning-for-Survival-Analysis/Bender-Sonabend/p/book/9781032537498" target="_blank" class="btn btn-primary">Publisher</a>
+          <a href="https://www.mlsabook.com" target="_blank" class="btn btn-outline">Read online</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ============================================================ Team -->
 <!-- ============================================================ Team
      VORUEBERGEHEND AUSGEBLENDET (AB, 2026-10-18): Abschnitt wirkt leer/unfertig.
      Zum Wiedereinblenden diesen Kommentar und den Navigationslink oben entfernen.
@@ -344,10 +491,6 @@
 
     <div class="contact-grid">
       <div class="contact-info">
-        <h3>Address</h3>
-        <p>Department of Statistics<br>LMU Munich<br>Ludwigstra&szlig;e 33<br>80539 Munich, Germany</p>
-      </div>
-      <div class="contact-info">
         <h3>Online</h3>
         <p><a href="mailto:bender.andreas@lmu.de">bender.andreas@lmu.de</a></p>
         <p><a href="https://github.com/survival-org" target="_blank">GitHub Organization</a></p>
@@ -368,6 +511,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2026-10-19"></script>
 </body>
 </html>

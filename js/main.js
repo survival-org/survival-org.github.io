@@ -10,6 +10,19 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
 
+// News: angeheftete Eintraege zuerst, danach nach Datum absteigend.
+// Ohne JS gilt die Reihenfolge im HTML, deshalb dort schon sinnvoll sortieren.
+const newsList = document.querySelector('.news-list');
+if (newsList) {
+  const pinned = (el) => (el.dataset.pinned === 'true' ? 1 : 0);
+  Array.from(newsList.querySelectorAll(':scope > .news-item'))
+    .sort((a, b) => {
+      if (pinned(a) !== pinned(b)) return pinned(b) - pinned(a);
+      return (b.dataset.date || '').localeCompare(a.dataset.date || '');
+    })
+    .forEach((el) => newsList.appendChild(el));
+}
+
 // Nav scroll state
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
